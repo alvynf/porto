@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Alvynf - Mahasiswa Informatika UTDI, Network Specialist & Java Developer. Berpengalaman di bidang Fiber Optic, Cisco Networking, dan Pemrograman Java.">
+  <meta name="author" content="Alvynf">
+  <meta name="theme-color" content="#0F172A">
+  <title>Alvynf | Portofolio - Network Specialist &amp; Java Developer</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet (Dark Slate & Deep Teal) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       HEADER & NAVIGATION BAR
+       ========================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <a href="#hero" class="brand-logo" aria-label="Alvynf Portfolio Beranda">
+        <span>&lt;</span>Alvynf<span>/&gt;</span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNavigation" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Primary Navigation Links -->
+      <nav id="primaryNavigation" class="nav-menu" aria-label="Navigasi Utama">
+        <ul class="nav-list" id="navList">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#certificates" class="nav-link">Sertifikasi</a></li>
+          <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li><a href="#contact" class="nav-link nav-link-cta">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================
+       MAIN CONTENT
+       ========================================================== -->
+  <main id="main-content">
+
+    <!-- 1. HERO BANNER SECTION -->
+    <section id="hero" class="section hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left: Hero Introduction -->
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-pulse" aria-hidden="true"></span>
+              <span>Terbuka untuk Kolaborasi &amp; Tantangan Baru</span>
+            </div>
+            <h1 id="hero-title" class="hero-title">
+              Halo, Saya <span class="highlight">Alviy</span> 👋
+            </h1>
+            <p class="hero-tagline">
+              Informatika Student | Network Specialist &amp; Java Developer
+            </p>
+            <p class="hero-description">
+              Berfokus pada arsitektur jaringan yang efisien dan pengembangan perangkat lunak berbasis logika yang kuat. Memadukan pengalaman praktis infrastruktur teknis dengan rekayasa perangkat lunak modern.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                Lihat Proyek
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="https://github.com/alvynf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                GitHub
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Hubungi Saya
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Visual Terminal Window (Technical Vibe) -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="terminal-title">alvynf@sys-node:~</span>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-row">
+                  <span class="prompt-sym">$</span>
+                  <span class="term-code">cat profile.json</span>
+                </div>
+                <pre class="term-code">
+{
+  <span class="term-keyword">"name"</span>: <span class="term-string">"Alviyanto Nur Fajri"</span>,
+  <span class="term-keyword">"focus"</span>: [
+    <span class="term-string">"Software Development"</span>,
+    <span class="term-string">"Network/Systems Specialist"</span>
+  ],
+  <span class="term-keyword">"education"</span>: {
+    <span class="term-keyword">"vocational"</span>: <span class="term-string">"SMK N 1 GANTIWARNO - TKJ"</span>,
+    <span class="term-keyword">"undergraduate"</span>: <span class="term-string">"S1 Informatika UTDI"</span>
+  },
+  <span class="term-keyword">"stack"</span>: [<span class="term-string">"Java"</span>, <span class="term-string">"Subnetting/VLSM"</span>, <span class="term-string">"Fiber Optic"</span>],
+  <span class="term-keyword">"status"</span>: <span class="term-string">"Ready to Build &amp; Innovate"</span>
+}</pre>
+                <div class="terminal-row" style="margin-top: 0.75rem;">
+                  <span class="prompt-sym">$</span>
+                  <span class="term-code">ping -c 3 utdi.ac.id</span>
+                </div>
+                <div class="term-comment">64 bytes from node.net: icmp_seq=1 ttl=64 time=1.24 ms</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Profil Diri</span>
+          <h2 id="about-title" class="section-title">Tentang Saya</h2>
+          <p class="section-subtitle">
+            Membawa fondasi disiplin jaringan kabel &amp; protokol menuju arsitektur komputasi modern.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Card 1: Latar Belakang Teknis SMK TKJ & Magang -->
+          <article class="about-card technical-background">
+            <div class="card-icon-badge">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Pondasi Jaringan &amp; Sistem (TKJ)</h3>
+            <p class="about-card-text">
+              Memiliki pondasi kuat dari bangku SMK jurusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong>. Terbiasa dengan implementasi lapangan langsung: mulai dari penarikan kabel, teknik pengelasan &amp; penyambungan <em>fiber optic</em> (splicing), pengukuran redaman optik menggunakan OPM, hingga perencanaan topologi jaringan kantor skala menengah selama magang di <strong>PT. Searas Citra Terabit</strong>.
+            </p>
+            <div class="about-highlights">
+              <span class="tag tag-cyan">Fiber Optic Splicing</span>
+              <span class="tag tag-cyan">Perencanaan Topologi</span>
+              <span class="tag tag-cyan">Subnetting / VLSM</span>
+              <span class="tag tag-cyan">Troubleshooting Jaringan</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Studi Akademik S1 Informatika UTDI -->
+          <article class="about-card academic-background">
+            <div class="card-icon-badge purple">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Studi Akademik (S1 Informatika UTDI)</h3>
+            <p class="about-card-text">
+              Melanjutkan minat ke tingkat perguruan tinggi dengan menempuh studi <strong>S1 Informatika di Universitas Teknologi Digital Indonesia (UTDI)</strong>. Berfokus pada pendalaman rekayasa perangkat lunak (<em>software engineering</em>), logika algoritma komputasi, struktur data efisien, dan pemrograman berorientasi objek (OOP) menggunakan bahasa <strong>Java</strong>.
+            </p>
+            <div class="about-highlights">
+              <span class="tag">Pemrograman Java</span>
+              <span class="tag">Logika Algoritma</span>
+              <span class="tag">Struktur Data</span>
+              <span class="tag">Object-Oriented Programming</span>
+            </div>
+          </article>
+
+          <!-- Synergy Banner -->
+          <aside class="about-synergy-banner" aria-label="Sinergi Hardware dan Software">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <div>
+              <p class="synergy-quote">
+                "Pemahaman mendalam mengenai layer fisik dan protokol jaringan memberikan presisi tinggi saat merancang arsitektur kode dan logika sistem perangkat lunak."
+              </p>
+              <span class="synergy-author">— alvynf (Fokus: Software Dev &amp; Network/Systems Specialist)</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS & TOOLS SECTION -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Kompetensi</span>
+          <h2 id="skills-title" class="section-title">Keahlian &amp; Peralatan</h2>
+          <p class="section-subtitle">
+            Kombinasi keahlian teknis jaringan kabel optik, logika pemrograman, dan perkakas pengembangan modern.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- 1. Jaringan & Sistem -->
+          <article class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="card-icon-badge" style="margin-bottom: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Jaringan &amp; Sistem</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Subnetting &amp; VLSM</span>
+                  <span class="skill-level">Tingkat Lanjut</span>
+                </div>
+                <p class="skill-desc">Kalkulasi CIDR, pembagian blok IP, efisiensi alokasi host jaringan IPv4.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Fiber Optic Splicing</span>
+                  <span class="skill-level">Praktik Lapangan</span>
+                </div>
+                <p class="skill-desc">Pengupasan, pemotongan presisi (*cleaving*), dan penyambungan fusion splicer.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Desain Topologi Jaringan</span>
+                  <span class="skill-level">Konseptual &amp; Fisik</span>
+                </div>
+                <p class="skill-desc">Perancangan arsitektur LAN, pemetaan node router/switch, dan dokumentasi kabel.</p>
+              </li>
+            </ul>
+          </article>
+
+          <!-- 2. Pemrograman -->
+          <article class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="card-icon-badge purple" style="margin-bottom: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Pemrograman</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java (JDK)</span>
+                  <span class="skill-level">Fokus Utama</span>
+                </div>
+                <p class="skill-desc">Dasar sintaks, prinsip Object-Oriented Programming (OOP), modularitas kode.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Logika &amp; Algoritma</span>
+                  <span class="skill-level">Problem Solving</span>
+                </div>
+                <p class="skill-desc">Analisis kompleksitas, pemecahan masalah rekursif, pengolahan array dan data string.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Web Stack (HTML5/CSS3)</span>
+                  <span class="skill-level">Dasar Web</span>
+                </div>
+                <p class="skill-desc">Struktur semantik HTML, CSS Grid &amp; Sangat dasar.</p>
+              </li>
+            </ul>
+          </article>
+
+          <!-- 3. Tools & Lingkungan Kerja -->
+          <article class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="card-icon-badge" style="margin-bottom: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Tools &amp; Peralatan</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-level">Version Control</span>
+                </div>
+                <p class="skill-desc">Manajemen repositori, commit workflow, branch, dan pelacakan revisi kode.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code &amp; Terminal</span>
+                  <span class="skill-level">Environment</span>
+                </div>
+                <p class="skill-desc">Navigasi CLI Linux/Windows PowerShell, setup compiler, automasi skrip kerja.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Packet Tracer &amp; FO Tools</span>
+                  <span class="skill-level">Simulasi &amp; Hardware</span>
+                </div>
+                <p class="skill-desc">Simulasi routing/switching Cisco, Fusion Splicer, Stripper, dan Optical Power Meter.</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS & CASE STUDIES SECTION -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Portofolio Karya</span>
+          <h2 id="projects-title" class="section-title">Proyek &amp; Studi Kasus</h2>
+          <p class="section-subtitle">
+            Kumpulan proyek teknis yang mengimplementasikan keahlian jaringan dan logika pemrograman.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Proyek 1: CLI IP Subnet Calculator (Java) -->
+          <article class="project-card">
+            <div class="project-preview" aria-hidden="true">
+              <div class="project-icon-placeholder">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="tag tag-cyan">Java Application</span>
+                <span class="tag">CLI Tool</span>
+              </div>
+              <h3 class="project-title">CLI IP Subnet Calculator</h3>
+              <p class="project-desc">
+                Aplikasi berbasis baris perintah (<em>command-line</em>) yang dibangun menggunakan Java untuk mengotomasi kalkulasi pembagian subnetting IP (CIDR dan VLSM). Mampu menghitung Network Address, Broadcast Address, Range Host Usable, dan Subnet Mask secara akurat.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java (JDK)</span>
+                <span class="tag">Algoritma Subnetting</span>
+                <span class="tag">CLI Parser</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/alvynf" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Lihat Repositori
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 2: Dokumentasi Topologi Jaringan PT. Searas Citra Terabit -->
+          <article class="project-card">
+            <div class="project-preview" aria-hidden="true">
+              <div class="project-icon-placeholder">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <circle cx="6" cy="19" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="12" y1="12" x2="6" y2="16"></line>
+                  <line x1="12" y1="12" x2="18" y2="16"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="tag tag-cyan">Jaringan Fisik</span>
+                <span class="tag">Dokumentasi PKL</span>
+              </div>
+              <h3 class="project-title">Pengalaman lapangan & Teknisi PT. Searas Citra Terabit</h3>
+              <p class="project-desc">
+                Dokumentasi dan eksekusi pekerjaan teknisi jaringan. Mencakup penarikan kabel <em>fiber optic</em> (FO), penyambungan serat optic (<em>splicing</em>), pengecekan konektivitas, serta konfigurasi modem & LAN sesuai dengan rancangan topologi kantor yang ditentukan.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Fiber Optic (FO)</span>
+                <span class="tag">FO Splicing</span>
+                <span class="tag">Modem & LAN Config</span>
+              </div>
+              <div class="project-links">
+                <a href="#about" class="project-link">
+                  Baca Detail Studi Kasus
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 3: Web Portofolio Pribadi Responsive -->
+          <article class="project-card">
+            <div class="project-preview" aria-hidden="true">
+              <div class="project-icon-placeholder">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="tag tag-cyan">Frontend Web</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <h3 class="project-title">Web Portofolio Pribadi (Dark Mode)</h3>
+              <p class="project-desc">
+                Website portofolio interaktif dan responsif satu halaman (<em>single-page scroll</em>) dengan estetika gelap modern, tipografi rapi, arsitektur kode semantik, dan performa tinggi tanpa dependensi berlebih.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5 Semantik</span>
+                <span class="tag">Modern CSS3</span>
+                <span class="tag">Vanilla JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/alvynf" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Kode Sumber GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CERTIFICATES & ACHIEVEMENTS SECTION -->
+    <section id="certificates" class="section certificates-section" aria-labelledby="certificates-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Validasi &amp; Prestasi</span>
+          <h2 id="certificates-title" class="section-title">Sertifikasi &amp; Pencapaian</h2>
+          <p class="section-subtitle">
+            Pencapaian kompetisi teruji dan sertifikasi profesional dalam administrasi sistem jaringan.
+          </p>
+        </header>
+
+        <div class="certificates-grid">
+          <!-- Sertifikat 1: Juara 3 LKS IT Network System Administration -->
+          <article class="certificate-card">
+            <figure class="certificate-media">
+              <span class="cert-badge-ribbon">Podium Juara</span>
+              <div class="cert-icon-visual" aria-hidden="true">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+                <span>Dokumen Resmi Sertifikat LKS</span>
+              </div>
+            </figure>
+            <div class="certificate-content">
+              <h3 class="certificate-title">Juara 3 LKS IT Network System Administration</h3>
+              <div class="certificate-meta">
+                <span>Penyelenggara: Kab. Klaten</span>
+                <span>•</span>
+                <time datetime="2025">Tahun 2025</time>
+              </div>
+              <p class="certificate-desc">
+                Meraih Juara 3 pada ajang Lomba Kompetensi Siswa (LKS) bidang IT Network System Administration tingkat Kabupaten Klaten. Menguji ketangkasan konfigurasi server Linux/Windows, routing dinamis, keamanan jaringan, dan troubleshooting cepat dalam batasan waktu ketat.
+              </p>
+              <div class="certificate-footer">
+                <span class="tag tag-cyan">Tingkat Kabupaten</span>
+                <button type="button" class="btn btn-sm btn-outline preview-cert-btn"
+                  data-cert-title="Juara 3 LKS IT Network System Administration (2025)"
+                  data-cert-issuer="Dinas Pendidikan &amp; MKKS Kab. Klaten"
+                  data-cert-year="2025"
+                  data-cert-desc="Sertifikat penghargaan atas prestasi meraih Juara 3 dalam Lomba Kompetensi Siswa (LKS) SMK bidang IT Network System Administration tahun 2025. Menguji konfigurasi server DNS, DHCP, Web, Firewall, routing statis/dinamis, dan mitigasi downtime sistem jaringan.">
+                  Lihat Detail Preview
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sertifikat 2: Sertifikat Intern Technician PT. Searas Citra Terabit -->
+          <article class="certificate-card">
+            <figure class="certificate-media">
+              <span class="cert-badge-ribbon" style="background-color: var(--accent-primary);">Verifikasi PKL</span>
+              <div class="cert-icon-visual" aria-hidden="true">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Sertifikat Resmi Magang Industri</span>
+              </div>
+            </figure>
+            <div class="certificate-content">
+              <h3 class="certificate-title">Sertifikat Intern Technician</h3>
+              <div class="certificate-meta">
+                <span>Penerbit: PT. Searas Citra Terabit</span>
+                <span>•</span>
+                <time datetime="2024">Magang Industri</time>
+              </div>
+              <p class="certificate-desc">
+                Sertifikat penyelesaian program magang praktik kerja lapangan (PKL) sebagai Teknisi Jaringan. Bertanggung jawab atas instalasi fisik infrastruktur kabel fiber optic, penanganan gangguan (<em>troubleshooting</em>) koneksi pelanggan ISP, dan dokumentasi perangkat jaringan.
+              </p>
+              <div class="certificate-footer">
+                <span class="tag">Pengalaman Industri</span>
+                <button type="button" class="btn btn-sm btn-outline preview-cert-btn"
+                  data-cert-title="Sertifikat Intern Technician - PT. Searas Citra Terabit"
+                  data-cert-issuer="PT. Searas Citra Terabit"
+                  data-cert-year="Praktik Kerja Lapangan (PKL)"
+                  data-cert-desc="Sertifikat kelulusan program magang industri teknisi jaringan di PT. Searas Citra Terabit. Berhasil menyelesaikan tugas lapangan meliputi penyambungan core fiber optic, terminasi OTB/ODC, penataan rack server, dan pengujian kualitas transmisi sinyal cahaya.">
+                  Lihat Detail Preview
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EXPERIENCE & SOFT SKILLS SECTION -->
+    <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Kepemimpinan</span>
+          <h2 id="experience-title" class="section-title">Pengalaman &amp; Soft Skills</h2>
+          <p class="section-subtitle">
+            Keterampilan komunikasi, manajerial organisasi, dan kepemimpinan yang terasah melalui organisasi formal.
+          </p>
+        </header>
+
+        <div class="experience-timeline">
+          <!-- Item 1: Ketua Sekbid Kewirausahaan OSIS -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <article class="experience-card">
+              <header class="experience-header">
+                <h3 class="experience-role">Sekbid Kewirausahaan OSIS</h3>
+                <span class="experience-duration">2 Periode Kepengurusan</span>
+              </header>
+              <div class="experience-org">Organisasi Siswa Intra Sekolah (OSIS)</div>
+              <ul class="experience-list">
+                <li>Memimpin dan mengkoordinasikan program kerja kewirausahaan sekolah dalam dua periode kepengurusan berturut-turut.</li>
+                <li>Merencanakan, mengelola anggaran modal, dan mengeksekusi stan bazar kewirausahaan pada event tahunan sekolah.</li>
+                <li>Melatih kemampuan kerjasama tim, serta pertanggungjawaban tata kelola finansial.</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Item 2: Sekretaris Dewan Ambalan Pramuka -->
+          <div class="timeline-item">
+            <div class="timeline-node purple" aria-hidden="true"></div>
+            <article class="experience-card">
+              <header class="experience-header">
+                <h3 class="experience-role">Sekretaris Dewan Ambalan Pramuka</h3>
+                <span class="experience-duration">Masa Bakti Organisasi</span>
+              </header>
+              <div class="experience-org">Gerakan Pramuka - Dewan Ambalan Penegak</div>
+              <ul class="experience-list">
+                <li>Mengelola seluruh tata laksana administrasi surat-menyurat, pengarsipan dokumen resmi, dan pendataan anggota ambalan.</li>
+                <li>Menyusun proposal operasional perkemahan, lembar kerja kegiatan lapangan, serta Laporan Pertanggungjawaban (LPJ).</li>
+                <li>Membangun kedisiplinan tinggi, ketelitian pengolahan dokumen, dan koordinasi cepat dalam situasi darurat di lapangan.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT & GET IN TOUCH SECTION -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Hubungi Saya</span>
+          <h2 id="contact-title" class="section-title">Mari Terhubung &amp; Berkolaborasi</h2>
+          <p class="section-subtitle">
+            Tertarik mendiskusikan topik infrastruktur jaringan, rekayasa kode Java, atau tawaran proyek? Kirimkan pesan!
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Information & Direct Channels -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Saluran Komunikasi Langsung</h3>
+            <p class="contact-info-desc">
+              Silakan hubungi saya melalui platform favorit Anda atau kunjungi repositori kode terbuka saya di GitHub.
+            </p>
+
+            <address class="contact-methods">
+              <!-- GitHub -->
+              <a href="https://github.com/alvynf" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span>Repositori Utama</span>
+                  <strong>github.com/alvynf</strong>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.39 9.74V9.93H5.07v8.57h2.78z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span>Jejaring Profesional</span>
+                  <strong>LinkedIn / Alvynf</strong>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:alvynf@example.com" class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span>Surel Resmi</span>
+                  <strong>alvynf@example.com</strong>
+                </div>
+              </a>
+            </address>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="senderName" class="form-label">Nama Lengkap</label>
+                <input type="text" id="senderName" name="name" class="form-input" placeholder="Contoh: Rahmat Santoso" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Alamat Surel (Email)</label>
+                <input type="email" id="senderEmail" name="email" class="form-input" placeholder="nama@domain.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageSubject" class="form-label">Perihal / Subjek</label>
+                <input type="text" id="messageSubject" name="subject" class="form-input" placeholder="Tawaran Proyek / Diskusi Teknis" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Pesan Anda</label>
+                <textarea id="senderMessage" name="message" class="form-textarea" placeholder="Tuliskan pesan atau detail rencana kolaborasi di sini..." required></textarea>
+              </div>
+
+              <div id="formAlert" class="form-alert" role="status" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary" id="submitBtn">
+                Kirim Pesan
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       MODAL DIALOG (PREVIEW SERTIFIKAT)
+       ========================================================== -->
+  <dialog id="certificateModal" class="cert-modal" aria-labelledby="modalCertTitle">
+    <div class="modal-header">
+      <h3 id="modalCertTitle" class="modal-title">Pratinjau Sertifikat</h3>
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup jendela pratinjau">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-cert-preview">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="8" r="7"></circle>
+          <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+        </svg>
+        <div>
+          <strong id="modalCertName" style="color: var(--text-primary); font-size: 1.1rem; display: block;">Judul Sertifikat</strong>
+          <span id="modalCertMeta" style="color: var(--text-secondary); font-size: 0.85rem; font-family: var(--font-mono);">Penerbit &bull; Tahun</span>
+        </div>
+      </div>
+      <p id="modalCertDesc" class="modal-cert-desc">Keterangan rinci mengenai sertifikat dan pencapaian.</p>
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <button type="button" class="btn btn-sm btn-outline" id="modalDismissBtn">Tutup</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Alvynf Portfolio">
+            <span>&lt;</span>Alvynf<span>/&gt;</span>
+          </a>
+          <p>
+            Portofolio resmi Alvynf — Software Development &amp; Network/Systems Specialist. Mengintegrasikan logika kode dan rekayasa infrastruktur jaringan.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigasi Footer">
+          <a href="#hero">Beranda</a>
+          <a href="#about">Tentang Saya</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#projects">Proyek</a>
+          <a href="#certificates">Sertifikasi</a>
+          <a href="#experience">Pengalaman</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 <strong>Alvynf</strong>. Hak Cipta Dilindungi Undang-Undang.
+        </p>
+        <a href="#hero" class="back-to-top" aria-label="Kembali ke atas halaman">
+          Kembali ke Atas
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================
+       VANILLA JAVASCRIPT: INTERAKTIVITAS & MODAL
+       ========================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Hamburger Menu Toggle
+      const navToggle = document.getElementById('navToggle');
+      const navList = document.getElementById('navList');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      if (navToggle && navList) {
+        navToggle.addEventListener('click', () => {
+          const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', !isExpanded);
+          navList.classList.toggle('open');
+        });
+
+        // Close menu when a navigation item is clicked
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navToggle.setAttribute('aria-expanded', 'false');
+            navList.classList.remove('open');
+          });
+        });
+      }
+
+      // 2. Active Navigation on Scroll (Intersection Observer)
+      const sections = document.querySelectorAll('main section[id]');
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+      };
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const currentId = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              if (link.getAttribute('href') === `#${currentId}`) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => sectionObserver.observe(section));
+
+      // 3. Certificate Modal Preview Handling
+      const modal = document.getElementById('certificateModal');
+      const previewButtons = document.querySelectorAll('.preview-cert-btn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const modalDismissBtn = document.getElementById('modalDismissBtn');
+      const modalCertTitle = document.getElementById('modalCertTitle');
+      const modalCertName = document.getElementById('modalCertName');
+      const modalCertMeta = document.getElementById('modalCertMeta');
+      const modalCertDesc = document.getElementById('modalCertDesc');
+
+      if (modal && previewButtons.length > 0) {
+        previewButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const title = btn.getAttribute('data-cert-title') || 'Sertifikat';
+            const issuer = btn.getAttribute('data-cert-issuer') || '-';
+            const year = btn.getAttribute('data-cert-year') || '';
+            const desc = btn.getAttribute('data-cert-desc') || '';
+
+            modalCertTitle.textContent = title;
+            modalCertName.textContent = title;
+            modalCertMeta.textContent = `${issuer} • ${year}`;
+            modalCertDesc.textContent = desc;
+
+            if (typeof modal.showModal === 'function') {
+              modal.showModal();
+            } else {
+              modal.setAttribute('open', '');
+            }
+          });
+        });
+
+        const closeModal = () => {
+          if (typeof modal.close === 'function') {
+            modal.close();
+          } else {
+            modal.removeAttribute('open');
+          }
+        };
+
+        if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+        if (modalDismissBtn) modalDismissBtn.addEventListener('click', closeModal);
+
+        // Close on backdrop click
+        modal.addEventListener('click', (e) => {
+          const rect = modal.getBoundingClientRect();
+          const isInDialog = (
+            rect.top <= e.clientY &&
+            e.clientY <= rect.top + rect.height &&
+            rect.left <= e.clientX &&
+            e.clientX <= rect.left + rect.width
+          );
+          if (!isInDialog) {
+            closeModal();
+          }
+        });
+      }
+
+      // 4. Contact Form Submission Simulation
+      const contactForm = document.getElementById('contactForm');
+      const formAlert = document.getElementById('formAlert');
+      const submitBtn = document.getElementById('submitBtn');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          if (!contactForm.checkValidity()) {
+            formAlert.className = 'form-alert';
+            formAlert.style.display = 'block';
+            formAlert.style.backgroundColor = 'rgba(239, 68, 68, 0.15)';
+            formAlert.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+            formAlert.style.color = '#F87171';
+            formAlert.textContent = 'Harap isi semua kolom formulir dengan benar.';
+            return;
+          }
+
+          const originalText = submitBtn.innerHTML;
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = 'Mengirim Pesan...';
+
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            formAlert.className = 'form-alert success';
+            formAlert.textContent = 'Terima kasih! Pesan Anda telah terkirim. Alvynf akan segera merespons Anda.';
+            contactForm.reset();
+
+            setTimeout(() => {
+              formAlert.style.display = 'none';
+            }, 6000);
+          }, 800);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
